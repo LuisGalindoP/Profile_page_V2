@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topNav">                                            <!--TOP NAVIGATION--> 
+            <div class="topNavLeft">
+                <a href="#" class="profile">Profile</a>
+                <a href="#" class="menu">Home</a>
+                <a href="#" class="menu" id="selected">My Profile</a>
+                <a href="#" class="menu">Find Connections</a>
+            </div>
+            <div class="topNavRight">
+                <button class="signOut">Sign Out</button>
+            </div>
+        </div>
+        <div class="contentMain">
+
+            <div class="leftNav">                                       <!--LEFT NAVIGATION--> 
+                <div class="leftTopContent, bordersAll" >
+                    <div class="blueBanner"></div>
+                        <img src="images/jane-m.jpg" alt="" id="profilePhoto">  <!--Profile Photo-->
+                    <p id="name">Jane Doe</p>                                <!--Profile Name-->
+                    <div class="city">
+                        <img src="icons/map-marker.png" alt="map-marker" height="22px" width="15px">
+                        <p>Seattle</p>
+                    </div>    
+                    <p class="text">Developer | Engineer | Problem Solver <br>Master of shadows and the Internet!</p>
+                    <div id="imageLink">
+                        <img src="icons/gear.png" alt="gear" height="20px" width="20px">
+                        <a href="#" id="edit-profile" onclick="editProfile()">edit profile</a>                        <!--Profile edit button-->
+                    </div>
+                </div>
+                <div class="leftBottomContent, bordersAll">
+                    <div class="blackBanner1">                   
+                            <p>Education</p>
+                    </div>
+                    <p class="text">Coding Dojo - Full Stack Bootcamp</p>
+                    <p class="text">Dec 2019 - Mar 2020</p>
+                    <p class="text">Triple black belt in Phyton, MERN and C# <p>
+                </div>
+            </div>
+
+            <div class="rightNav">                                       <!--RIGHT NAVIGATION--> 
+                <div class=" bordersAll">                                   <!--RIGHT TOP CONTENT-->
+                    <div class="blackBanner2">
+                        <p class="connectionNumber">2</p>
+                        <p>Connection Requests</p>
+                    </div>
+                    <div class="connectionList">                    
+                        <ul class="list">
+                            <li class="listItems1"><img src="images/todd-s.jpg" alt="gear" height="24" width="24" class="imageIcon"></li>
+                            <li class="listItems2"><img src="images/phil-s.jpg" alt="gear" height="24" width="24" class="imageIcon"></li>
+                        </ul>
+                        <ul class="list">
+                            <li class="listItems1">Todd E</li>
+                            <li class="listItems2">Phil K</li>
+                        </ul>
+                        <ul class="list">
+                            <li class="listItems1"><img src="icons/accept-circle.png" alt="gear" height="24" width="24" onclick="accepted('listItems1')"></li>
+                            <li class="listItems2"><img src="icons/accept-circle.png" alt="gear" height="24" width="24" onclick="accepted('listItems2')"></li>
+                        </ul>
+                        <ul class="list">
+                            <li class="listItems1"><img src="icons/close-circle.png" alt="gear" height="24" width="24" onclick="accepted('listItems1')"></li>
+                            <li class="listItems2"><img src="icons/close-circle.png" alt="gear" height="24" width="24" onclick="accepted('listItems2')"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" bordersAll">                               <!--RIGHT BOTTOM CONTENT-->
+                    <div class="blackBanner2">
+                        <p class="connectionNumber2">500</p>
+                        <p>Your connections</p>
+                    </div>
+                    <div class="connectionList">                       
+                        <ul class="list">
+                            <li class="listItems3"><img src="images/adrien-s.jpg" alt="gear" height="24" width="24" class="imageIcon"></li>
+                            <li class="listItems3"><img src="images/anne-s.jpg" alt="gear" height="24" width="24" class="imageIcon"></li>
+                            <li class="listItems3"><img src="images/alayne-s.jpg" alt="gear" height="24" width="24" class="imageIcon"></li>
+                            <li class="listItems3"><img src="images/arry-s.jpg" alt="gear" height="24" width="24" class="imageIcon"></li>
+                        </ul>
+                        <ul class="list">
+                            <li class="listItems3">Adrien D</li>
+                            <li class="listItems3">Anne J</li>
+                            <li class="listItems3">Alayne T</li>
+                            <li class="listItems3">Arry Y</li>
+                        </ul>
+                    </div>  
+                </div>
+                <div class="viewMore">
+                    <a href="#" id="imageLink">View More</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
